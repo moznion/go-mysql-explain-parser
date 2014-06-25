@@ -6,6 +6,6 @@ go:
     - tip
 before_script:
     - go get github.com/onsi/gomega
-    - go get github.com/moznion/go-unicode-east-asian-width
+    - go get github.com/moznion/go-text-visual-width
 script:
     - go test -v
