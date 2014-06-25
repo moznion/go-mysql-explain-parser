@@ -49,7 +49,7 @@ func (rows *stringArray) removeUnnecessaryLinesOnBothEnds() {
 	rows.removeUnnecessaryLinesOnBottom()
 }
 
-// Parse returns the result of parsed EXPLAIN as array of map
+// Parse returns the result of parsed EXPLAIN
 func Parse(explain string) []map[string]string {
 	rows := stringArray(regexp.MustCompile("\r?\n").Split(explain, -1))
 	rows.removeUnnecessaryLinesOnBothEnds()
